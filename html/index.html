@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula Table</title>
+</head>
+
+<body>
+    <h1>Aula de Tabelas HTML</h1>
+    <p>Minha primeira tabela em HTML</p>
+
+    <!-- Tabela -->
+    <table border="1">
+        <caption>Lista de Alunos</caption>
+        <tr>
+            <th colspan="4">
+                Dados dos alunos
+            </th>
+        </tr>
+        <thead>
+ 
+            <tr>
+                <th>TURMA</th>
+                <th>NOME</th>
+                <th>IDADE</th>
+                <th>CIDADE</th>
+            </tr>
+            
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td rowspan="3">TURMA 1DS2</td>  
+                <td>Vinicius</td>
+                <td>28</td>
+                <td>Hortolândia</td>
+            </tr>
+            <tr>
+                <td>Joao</td>
+                <td>16</td>
+                <td>Campinas</td>
+            </tr>
+            <tr>
+                <td>Julia Marcolino</td>
+                <td>16</td>
+                <td>Campinas</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="2">300</td>                
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
