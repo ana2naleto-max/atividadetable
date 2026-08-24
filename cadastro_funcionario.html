@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionário</title>
+</head>
+<body>
+
+    <h1>Cadastro de Funcionários</h1>
+
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Dados do Funcionário</legend>
+
+            <table>
+                
+                <tr>
+                    <th colspan="2">Preencha as informações do novo colaborador</th>
+             
+
+               
+                <tr>
+                    <td><label for="telefone">Telefone:</label></td>
+                    <td>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                        &nbsp;&nbsp;&nbsp;
+                        <label for="data_nascimento">Data de Nascimento:</label>
+                        <input type="date" id="data_nascimento" name="data_nascimento" required>
+                    </td>
+                </tr>
+
+            
+                <tr>
+                    <td><label for="cargo">Cargo:</label></td>
+                    <td><input type="text" id="cargo" name="cargo" placeholder="Ex: Desenvolvedor Jr" required></td>
+                </tr>
+
+            
+                <tr>
+                    <td><label for="salario">Salário (R$):</label></td>
+                    <td><input type="number" id="salario" name="salario" min="1412" step="0.01" placeholder="1412.00" required></td>
+                </tr>
+
+                
+                <tr>
+                    <td><label for="setor">Setor:</label></td>
+                    <td>
+                        <select id="setor" name="setor" required>
+                            <option value="">Selecione...</option>
+                            <option value="ti">Tecnologia da Informação</option>
+                            <option value="rh">Recursos Humanos</option>
+                            <option value="financeiro">Financeiro</option>
+                            <option value="comercial">Comercial</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- 9. Turno -->
+                <tr>
+                    <td>Turno:</td>
+                    <td>
+                        <input type="radio" id="manhas" name="turno" value="manha" required>
+                        <label for="manhas">Manhã</label>
+                        
+                        <input type="radio" id="tarde" name="turno" value="tarde">
+                        <label for="tarde">Tarde</label>
+                        
+                        <input type="radio" id="noite" name="turno" value="noite">
+                        <label for="noite">Noite</label>
+                    </td>
+                </tr>
+
+            
+                <tr>
+                    <td>Tipo de contrato:</td>
+                    <td>
+                        <input type="radio" id="clt" name="tipo_contrato" value="clt" required>
+                        <label for="clt">CLT</label>
+
+                        <input type="radio" id="pj" name="tipo_contrato" value="pj">
+                        <label for="pj">PJ</label>
+
+                        <input type="radio" id="estagio" name="tipo_contrato" value="estagio">
+                        <label for="estagio">Estágio</label>
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>Conhecimentos / Tecnologias:</td>
+                    <td>
+                        <input type="checkbox" id="html" name="tecnologias[]" value="html">
+                        <label for="html">HTML</label>
+
+                        <input type="checkbox" id="css" name="tecnologias[]" value="css">
+                        <label for="css">CSS</label>
+
+                        <input type="checkbox" id="javascript" name="tecnologias[]" value="javascript">
+                        <label for="javascript">JavaScript</label>
+
+                        <input type="checkbox" id="sql" name="tecnologias[]" value="sql">
+                        <label for="sql">SQL</label>
+                    </td>
+                </tr>
+
+                <!-- 12. Observações -->
+                <tr>
+                    <td><label for="observacoes">Observações:</label></td>
+                    <td>
+                        <textarea id="observacoes" name="observacoes" rows="4" cols="40" placeholder="Anotações adicionais sobre o candidato..."></textarea>
+                    </td>
+                </tr>
+
